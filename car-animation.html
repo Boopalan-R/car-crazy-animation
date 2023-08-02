@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .road{
+            width: 100%;
+            height: 300px;
+            background: black;
+            margin-top: 500px;
+        }
+        .car{
+            width: 800px;
+            margin-top: -210px; 
+        }
+        .tire1{
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            background: gray;
+            margin-top: -160px;
+            position: absolute;
+            margin-left: 140px;
+        }
+        .tire1 img{
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+        }
+        .tire2{
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            background: gray;
+            margin-top: -160px;
+            position: absolute;
+            margin-left: 560px;
+        }
+        .tire2 img{
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+        }
+        @keyframes image{
+            20%{
+                margin-left: 100px;
+            }
+            40%{
+                margin-left: 200px;
+            }
+            60%{
+                margin-left:300px;
+            }
+            80%{
+                margin-left: 400px;
+            }
+            100%{
+                margin-left: 500px;
+            }
+        }
+        .image{
+            animation-name: image;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: 100;
+        }
+        @keyframes tire1{
+            10%{
+                rotate: 100deg;
+            }
+            20%{
+                rotate: 200deg;
+            }
+            30%{
+                rotate: 300deg;
+            }
+            40%{
+                rotate: 400deg;
+            }
+            50%{
+                rotate: 500deg;
+            }
+            60%{
+                rotate: 600deg;
+            }
+            70%{
+                rotate: 700deg;
+            }
+            80%{
+                rotate: 800deg;
+            }
+            90%{
+                rotate: 900deg;
+            }
+            100%{
+                rotate: 1000deg;
+            }
+        }
+        .tire1{
+            animation-name: tire1;
+            animation-duration: 3s;
+            animation-iteration-count: 100;
+            animation-timing-function: linear;
+        }
+        @keyframes tire2{
+            10%{
+                rotate: 100deg;
+            }
+            20%{
+                rotate: 200deg;
+            }
+            30%{
+                rotate: 300deg;
+            }
+            40%{
+                rotate: 400deg;
+            }
+            50%{
+                rotate: 500deg;
+            }
+            60%{
+                rotate: 600deg;
+            }
+            70%{
+                rotate: 700deg;
+            }
+            80%{
+                rotate: 800deg;
+            }
+            90%{
+                rotate: 900deg;
+            }
+            100%{
+                rotate: 1000deg;
+            }
+        }
+        .tire2{
+            animation-name: tire2;
+            animation-duration: 3s;
+            animation-iteration-count: 100;
+            animation-timing-function:linear;
+        }
+        .tree{
+            width: 500px;
+            position: absolute;
+            margin-top: -450px;
+            z-index: -1;
+            margin-left: 500px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- road -->
+    <div class="road">
+        <img src="https://freesvg.org/img/Colorful-Natural-Tree.png" alt="" class="tree">
+        <div class="image">
+            <img src="https://static.vecteezy.com/system/resources/previews/001/193/929/original/vintage-car-png.png" alt="" class="car">
+            <div class="tire1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/F1_tire_Pirelli_PZero_Red.svg/1200px-F1_tire_Pirelli_PZero_Red.svg.png" alt="">
+            </div>
+            <div class="tire2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/F1_tire_Pirelli_PZero_Red.svg/1200px-F1_tire_Pirelli_PZero_Red.svg.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- road ends -->
+</body>
+</html>
